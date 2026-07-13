@@ -4,30 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Contacto - Pizzeria il Hambriento</title>
+    <!-- Vinculación del mismo archivo CSS para mantener el diseño consistente -->
     <link rel="stylesheet" href="styles.css">
+</head>
 
-    <section>
-        <h2>Formulario de contacto</h2>
+<body>
+    <!-- Nombre: Samuel Morales Gallardo -->
+    <!-- Evaluación Frontend: HTML5, CSS3 y GIT -->
+    <!-- Temática: Comida (Pizzeria) -->
 
-        <form>
-            <label>Nombre:</label>
-            <input type="text" placeholder="Ingresa tu nombre">
+    <!-- Navegación idéntica a index.html para una experiencia de usuario coherente -->
+    <nav>
+        <div class="logo">
+            <h2>Pizzeria il Hambriento</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-            <label>Correo:</label>
-            <input type="email" placeholder="Ingresa tu correo">
+    <main>
+        <!-- Contenedor del formulario para aplicar estilos específicos -->
+        <section class="form-container">
+            <h2>Formulario de contacto</h2>
+            <p>¿Tienes dudas o quieres hacer un pedido? Escríbenos.</p>
 
-            <label>Edad:</label>
-            <input type="number" placeholder="Ingresa tu edad">
+            <!-- FORM: Etiqueta principal para recolectar datos -->
+            <!-- action="#" indica que por ahora los datos no se envían a ningún servidor real -->
+            <form action="#">
+                
+                <!-- Cada form-group separa una etiqueta de su campo de entrada -->
+                <div class="form-group">
+                    <!-- label: Etiqueta de texto. El atributo 'for' debe coincidir con el 'id' del input -->
+                    <label for="nombre">Nombre:</label>
+                    <!-- input type="text": Campo para texto corto -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
 
-            <label>Comentario:</label>
-            <textarea placeholder="Escribe un comentario"></textarea>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <!-- input type="email": Valida automáticamente que el formato sea de correo electrónico -->
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <!-- input type="number": Solo permite ingresar números -->
+                    <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad">
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <!-- textarea: Campo para textos largos o multilínea -->
+                    <textarea id="comentario" name="comentario" placeholder="Escribe un comentario"></textarea>
+                </div>
+
+                <!-- button type="submit": El botón que activa el envío de los datos del formulario -->
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <p>© 2026 il Hambriento - Todos los derechos reservados</p>
     </footer>
 
-</head>>
+</body>
+
+</html>

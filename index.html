@@ -2,60 +2,71 @@
 <html lang="es">
 
 <head>
+    <!-- Define el conjunto de caracteres universal para evitar errores con tildes y ñ -->
     <meta charset="UTF-8">
+    <!-- Asegura que la página sea responsiva (se adapte a móviles) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba Frontend</title>
+    <!-- El título que aparece en la pestaña del navegador -->
+    <title>Pizzeria il Hambriento - Las mejores pizzas artesanales</title>
+    <!-- Enlace al archivo de estilos CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<nav>
-    <h2>Pizzeria il Hambriento</h2>
 
+<body>
+    <!-- COMENTARIOS DE IDENTIFICACIÓN (Requisito de evaluación) -->
+    <!-- Nombre: Samuel Morales Gallardo -->
+    <!-- Evaluación Frontend: HTML5, CSS3 y GIT -->
+    <!-- Temática: Comida (Pizzeria) -->
 
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-</nav>
-<header>
-    <h1> Bienvenido a Pizzeria "il Hambriento"</h1>
-    <p> disfruta de las mejores pizzas en artesanales</p>
-    <br>
-
-    <button>Ver mas</button>
-
-</header>
-
-
-<main>
-    <section>
-        <h2>Sobre nosotros</h2>
-        <br>
-        <p> Somos una pizzeria artesanal que ofrece las mejores pizzas de la ciudad</p>
-        <br>
-        <img src="https://www.cocinacaserayfacil.net/wp-content/uploads/2020/03/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg " 
-         alt="Pizzeria il Hambriento" width="300px">
-        
-    </section>
-        <h2>Donde podras encontrar nuestra variedad de pizzas</h2>
+    <!-- NAV: Barra de navegación. Contiene los enlaces principales del sitio -->
+    <nav>
+        <!-- Logo o nombre de la marca -->
+        <div class="logo">
+            <h2>Pizzeria il Hambriento</h2>
+        </div>
+        <!-- Lista de enlaces de navegación -->
         <ul>
-            <li>Pizza de pepperoni</li>
-            <li>Pizza de jamon y queso</li>
-            <li>Pizza de pollo con champiñones</li>
-            <li>Pizza vegetariana</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
         </ul>
+    </nav>
 
+    <!-- HEADER: Encabezado principal o sección "Hero". Es lo primero que ve el usuario -->
+    <header>
+        <h1>Bienvenido a Pizzeria "il Hambriento"</h1>
+        <p>Disfruta de las mejores pizzas artesanales de la ciudad.</p>
+        <!-- Llamada a la acción (CTA) -->
+        <button>Ver más</button>
+    </header>
 
+    <!-- MAIN: Contenido principal de la página -->
+    <main>
+        <!-- SECTION: Una sección temática dentro del contenido -->
+        <section class="about">
+            <h2>Sobre nosotros</h2>
+            <p>Somos una pizzería artesanal que ofrece las mejores pizzas de la ciudad, utilizando ingredientes frescos y recetas tradicionales.</p>
+            <!-- Imagen representativa de la sección -->
+            <img src="https://www.cocinacaserayfacil.net/wp-content/uploads/2020/03/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg" 
+                 alt="Pizzas artesanales il Hambriento">
+        </section>
 
+        <!-- SECTION: Sección del menú o lista de productos -->
+        <section class="menu-preview">
+            <h2>Nuestra Variedad de Pizzas</h2>
+            <!-- Lista desordenada para enumerar las opciones -->
+            <ul>
+                <li>Pizza de pepperoni</li>
+                <li>Pizza de jamón y queso</li>
+                <li>Pizza de pollo con champiñones</li>
+                <li>Pizza vegetariana</li>
+            </ul>
+        </section>
+    </main>
 
-<!-- Nombre: Samuel Morales Gallardo -->
-<!-- Evaluación Frontend: HTML5, CSS3 y GIT -->
-<!-- Temática de su página web, por ejemplo: viajes, comida, deportes, e-commerce. -->
-
-<footer>
-    <p>© 2026 il Hambriento - Todos los derechos reservados</p>
-</footer>
+    <!-- FOOTER: Pie de página. Información de copyright y legal -->
+    <footer>
+        <p>© 2026 il Hambriento - Todos los derechos reservados</p>
+    </footer>
 
 </body>
-
-</html>
-
 </html>
